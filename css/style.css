@@ -6,7 +6,11 @@ body {
   color: #0F75BC;
   line-height: 1.7;
 }
-
+<header> {
+  background-color: #74C7F0;
+  padding: 10px;
+  }
+  
 h1 {
   font-weight: 700;
   line-height: 1.3;
