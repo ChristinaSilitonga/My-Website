@@ -1,20 +1,4 @@
-header {
-  background-color: #74C7F0;
-  border-bottom: 3px solid #4a4a4a;
-  padding: 10px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-  margin: 10px;
-}
-
-selector {
-  margin: 0 auto;
-  /* No spacing to top and bottom and auto spacing to left and right */
-}
-
-{
+* {
   box-sizing: border-box;
 }
 
@@ -30,10 +14,6 @@ body {
 h1 {
   font-weight: 700;
   line-height: 1.3;
-}
-
-#hero h1 {
-  text-align: center; /* Centers text */
 }
 
 h2 {
@@ -65,17 +45,23 @@ a {
   /* No underlining */
 }
 
-a:hover {
-  color: #055185;
-  text-decoration: none;
-  /* Underlining when hovering over a link */
+a:visited {
+  color: #74C7F0;
 }
 
-button {
+a:hover, a:focus {
+  color: #055185;
+}
+
+a:active {
+  color: #055185;
+}
+
+.button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #74C7F0;
-  color: #ffffff;
+  color: #ffffff !important;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -85,33 +71,49 @@ button {
   transition: 0.2s opacity;
 }
 
-a {
-  /* element selector */
-  color: #055185;
+.button:hover, .button:focus {
+  opacity: 0.8;
 }
 
-my-link {
-  /* id selector */
-  color: blue;
-}
-
-my-link {
-  /* class selector */
-  color: #055185;
-}
-
-selector {
-  position: relative;
-}
-
-selector {
-  float: left;
-}
-
-selector {
-  width: 80%;
-}
-
-container {
+.container {
   max-width: 1200px;
+  padding: 0 1em;
+}
+
+header {
+  background-color: #74C7F0;
+  border-bottom: 3px solid #4a4a4a;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a {
+  color: #ffffff;
+}
+
+nav a:visited {
+  color: #ffffff;
+}
+
+nav a:hover, nav a:focus, nav a:active {
+  color: #484848;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+nav {
+  margin-top: 10px;
 }
