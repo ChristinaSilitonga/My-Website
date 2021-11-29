@@ -6,7 +6,7 @@ body {
   background-color: #EBF3FF;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   color: #0F75BC;
   line-height: 1.7;
 }
@@ -75,6 +75,17 @@ a:active {
   opacity: 0.8;
 }
 
+.contact .button {
+  width: 48%;
+  text-align: center;
+}
+
+.contact {
+display: flex;
+justify-content: space-between;
+margin-bottom: 1em;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 1em;
@@ -85,10 +96,14 @@ header {
   border-bottom: 3px solid #4a4a4a;
   padding: 10px 0;
   text-align: center;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
-  max-width: 80px;
+  max-width: 50px;
+  border-radius: 10em;
+  border: 3px solid #0F75BC;
 }
 
 nav ul {
@@ -116,4 +131,22 @@ nav li {
 
 nav {
   margin-top: 10px;
+}
+
+main {
+  padding-top: 125px;
+}
+
+.social .fab {
+font-size: 1.5em;
+padding: 0.5em 1em;
+}
+
+.social {
+text-align: center;
+}
+
+.copy {
+text-align: center;
+font-size: 70%;
 }
