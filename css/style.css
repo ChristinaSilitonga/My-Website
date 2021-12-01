@@ -81,9 +81,9 @@ a:active {
 }
 
 .contact {
-display: flex;
-justify-content: space-between;
-margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
 }
 
 .container {
@@ -138,23 +138,17 @@ main {
 }
 
 .social .fab {
-font-size: 1.5em;
-padding: 0.5em 1em;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
 }
 
 .social {
-text-align: center;
+  text-align: center;
 }
 
 .copy {
-text-align: center;
-font-size: 70%;
-}
-
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
+  text-align: center;
+  font-size: 70%;
 }
 
 /* ==============================
@@ -169,21 +163,146 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 16px;
+  }
+
+  main {
+    padding-top: 95px;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
   }
 
   .col-md-6 {
     width: 50%;
   }
 
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
   .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
+  }
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work h3 {
+    margin-top: 0;
+      }
+
+      .work h4 {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+          }
+.about img {
+  max-width: 350px;
+}
+.about picture {
+  display: block;
+  text-align: center;
+
+}
+}
+
+/* ==============================
+Medium devices (1024px and larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
 }
