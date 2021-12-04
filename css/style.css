@@ -324,9 +324,19 @@ Medium devices (1024px and larger)
 }
 
 .cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+  animation: 3s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 4s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,150px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
 }
