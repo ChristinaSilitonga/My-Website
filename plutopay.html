@@ -16,6 +16,7 @@
 <body>
   <header>
     <div class="container">
+   <div class="navtoggle" id="myNavtoggle">
       <img class="logo" src="img/logo/logo-cs.jpg" alt="Christina Silitonga Logo">
       <nav>
         <ul>
@@ -26,11 +27,13 @@
             <a href="index.html">Work</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact"  onclick="menuToggle()">Contact</a>
           </li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+      </div>
   </header>
   <main>
     <section class="animation">
@@ -1727,6 +1730,7 @@
       <p class="copy">Copyright Christina Silitonga 2021</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 
